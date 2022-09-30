@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
+import {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/cartContext';
+import ImagenDesc from '../imagen_desc/imagenDesc';
 import ItemCount from '../item-count/itemCount';
 
 
 const Item = ({ prod }) => {
     
-    const [imagenActiva, setImagenActiva] = useState(prod.portada)
-    const {agregarProducto, estaEnCarrito} = React.useContext(CartContext)
-
+    const {agregarProducto, estaEnCarrito} = useContext(CartContext)
 
     function agregar(quantity) {
         agregarProducto(prod, quantity)
@@ -16,18 +15,8 @@ const Item = ({ prod }) => {
 
 return(
     <div style={ productos_cards }>
-        <div style= { productos_cards_img_blq }>
-            <div style= { productos_cards_blq_img_peq }>
-                <img onClick={() => setImagenActiva(prod.portada)} src={ prod.portada } alt={prod.key} style= { productos_cards_img_peq }/>
-                <img onClick={() => setImagenActiva(prod.down)} src={ prod.down } alt={prod.key} style= { productos_cards_img_peq }/>
-                <img onClick={() => setImagenActiva(prod.right)} src={ prod.right } alt={prod.key} style= { productos_cards_img_peq }/>
-                <img onClick={() => setImagenActiva(prod.back)} src={ prod.back} alt={prod.key} style= { productos_cards_img_peq }/>
-            </div>
-        
-            <div style= { productos_cards_blq_img_grande }>
-                <img src={ imagenActiva } alt={prod.key} style= { productos_cards_img_grande }/>
-            </div>    
-        </div>
+
+        <ImagenDesc prod={prod}/>
 
         <div style={productos_cards_caract_blq }>
             <h2 style={ productos_cards_caract_marca}>{ prod.marca }</h2>
