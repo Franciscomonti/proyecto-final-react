@@ -51,40 +51,6 @@ const productos_cards = {
     backgroundColor: 'white',
 } 
 
-const productos_cards_img_blq  = {
-    display:'flex',
-    justifyContent: 'space-between',
-}
-
-let productos_cards_blq_img_grande  ={
-    height: '100%',
-    display: 'flex',
-    backgroundColor: '#f6f6f6',
-    margin: '0px 5px',
-}
-
-const productos_cards_img_grande = {
-    width: '650px',
-    height: '300px',
-    margin: 'auto',
-    objectFit: 'contain',
-}
-
-const productos_cards_blq_img_peq = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-}
-
-const productos_cards_img_peq  = {
-    width: '70px',
-    height: '70px',
-    objectFit: 'contain',
-    cursor: 'pointer',
-    backgroundColor: '#f6f6f6',
-}
-
-
 const productos_cards_caract_blq  = {
     width: '400px',
     margin: '0 0 0 auto',
@@ -145,22 +111,6 @@ const productos_cards_caract_btn_add = {
     fontSize: '14px',
 }
 
-// const productos_cards_caract_btn_fav = {
-//     margin: '5px',
-//     height: '40px',
-//     width: '40px',
-//     cursor: 'pointer',
-//     borderRadius: '5px',
-//     border: '0.5px solid transparent ',
-//     display: 'flex',
-//     justifyContent: 'center',
-//     alignItems: 'center',
-// }
-
-// const productos_cards_caract_btn_fav_img = {
-//     width: '30px',
-//     objectFit: 'cover',
-// }
 
 const productos_cards_caract_btn_size = {
     margin: '5px 10px 5px 0px',

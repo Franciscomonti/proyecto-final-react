@@ -59,40 +59,6 @@ const ItemDetail = ({ producto }) => {
         flexDirection: 'column',
     } 
     
-    const productos_cards_img_blq  = {
-        display:'flex',
-        justifyContent: 'space-between',
-    }
-    
-    const productos_cards_blq_img_grande  ={
-        width: '1000px',
-        height: '450px',
-        display: 'flex',
-        backgroundColor: '#f6f6f6',
-        margin: '0px 5px',
-    }
-    const productos_cards_img_grande = {
-        width: '800px',
-        height: '400px',
-        margin: 'auto',
-        objectFit: 'contain',
-    }
-    
-    const productos_cards_blq_img_peq = {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'start',
-    }
-    
-    const productos_cards_img_peq  = {
-        width: '75px',
-        height: '75px',
-        objectFit: 'contain',
-        cursor: 'pointer',
-        margin: '0px 0px 20px 0px',
-        backgroundColor: '#f6f6f6',
-    }
-    
     const productos_cards_caract_blq  = {
         width: '1090px',
         height: '300px',
@@ -100,8 +66,6 @@ const ItemDetail = ({ producto }) => {
         display: 'flex',
         justifyContent: 'center', 
         padding: '20px 0px 0px 0px',
-        
-
     }
 
     const productos_cards_caract_blq_detal = {
@@ -138,8 +102,6 @@ const ItemDetail = ({ producto }) => {
         height: '50px',
         display: 'flex',
         width: '100%',
-        
-    
     }
     
     const productos_cards_caract_btn_size = {
@@ -169,8 +131,7 @@ const ItemDetail = ({ producto }) => {
         textDecoration: 'none', 
         color: 'black',
         fontSize: '14px',
-        
-      }
+    }
 
     const productos_cards_btns_blq = {
         display: 'flex',
